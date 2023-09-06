@@ -31,7 +31,7 @@ if (isBuild) {
 export default defineConfig({
   server: { port: SERVER_PORT },
   site: BASE_URL,
-  // base: MY_REPO,
+  base: MY_REPO,
   integrations: [
     sitemap(),
     tailwind({
