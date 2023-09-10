@@ -13,7 +13,7 @@ As per the [actix documentation](https://actix.rs/docs/actix/actor/):
 
 Personally for me, it was much more interesting building the web socket server without actors. Because I get to understand the inner workings of a websocket server much better. I also have much more control, regarding how I would like to implement the web socket server.
 
-There are both examples of how to build a websocket server with and without actors in actix's examples GitHub repo. But in this tutorial ([with actors](https://github.com/actix/examples/tree/master/websockets/chat) and [without actors](https://github.com/actix/examples/tree/master/websockets/chat-actorless)), I'm going to show you how to build them without actors.
+There are both examples of how to build a websocket server with and without actors in actix's examples GitHub repo ([with actors](https://github.com/actix/examples/tree/master/websockets/chat) and [without actors](https://github.com/actix/examples/tree/master/websockets/chat-actorless)). But in this tutorial, I'm going to show you how to build them without actors.
 
 Let's start by making a new project.
 ```bash
