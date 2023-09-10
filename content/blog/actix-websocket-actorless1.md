@@ -221,6 +221,6 @@ async fn run(mut self) -> std::io::Result<()> {
     Ok(())
 }
 ```
-Then finally we have these three methods. Let's take a look at the run method first. Remember the WebSocketCommand enum we had in previously? Well this run function handle's all the different messages that we can possibly receive from the sessions and calls the appropriate method to handle those messages. The `user_connect` method inserts a `user_id` and `user_sender`, which will allow it to send a message to a particular session. While the `user_sends_message` broadcasts messages to every user connected to the server. And that's it for our WebSocket server. The next thing we need to do is actually implement the `SessionFactory` that we saw previously as well as implement the UserSession. Which I will write in the next post.
+Then finally we have these three methods. Let's take a look at the run method first. Remember the WebSocketCommand enum we had previously? Well this run function handle's all the different messages that we can possibly receive from the sessions and calls the appropriate method to handle those messages. The `user_connect` method inserts a `user_id` and `user_sender`, which will allow it to send a message to a particular session. While the `user_sends_message` broadcasts messages to every user connected to the server. And that's it for our WebSocket server. The next thing we need to do is actually implement the `SessionFactory` that we saw previously as well as implement the UserSession. Which I will write in the next post.
 
 Thanks for reading.
